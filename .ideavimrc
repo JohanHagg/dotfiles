@@ -9,8 +9,11 @@
 " Source your .vimrc
 source ~/.vimrc
 
+" Have to add this on mac for <leader>p to work for some reason
+let mapleader = " "
+
 " Find file
-noremap <leader>p mm`m:action GoToFile<CR>
+noremap <leader>p mm`m:action GotoFile<CR>
 
 " Find grep
 noremap <leader>fg mm`m:action FindInPath<CR>
@@ -32,7 +35,14 @@ noremap <leader>. :action ShowIntentionActions<CR>
 " Show error on current
 noremap <leader>, :action ShowErrorDescription<CR>
 
+" Rename
+noremap <leader>rn :action RenameElement<CR>
 
+" Turn off sound when reaching the edge of editor
+set visualbell
+
+" Optimize imports
+noremap <leader>oi :action OptimizeImports<CR>
 
 "" -- Suggested options --
 " Show a few lines of context around the cursor. Note that this makes the
