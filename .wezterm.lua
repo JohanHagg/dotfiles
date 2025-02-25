@@ -17,4 +17,7 @@ config.hide_tab_bar_if_only_one_tab = true
 -- Font size
 config.font_size = 13.8
 
+-- Enable hold keys on mac
+config.use_ime = false
+
 return config
