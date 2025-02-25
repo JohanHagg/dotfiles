@@ -20,4 +20,7 @@ config.font_size = 13.8
 -- Enable hold keys on mac
 config.use_ime = false
 
+-- Max FPS
+config.max_fps = 120
+
 return config
