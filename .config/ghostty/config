@@ -1,2 +1,5 @@
 theme = catppuccin-mocha
 
+keybind = cmd+shift+left=previous_tab
+keybind = cmd+shift+right=next_tab
+
